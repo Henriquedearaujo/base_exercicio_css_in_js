@@ -5,8 +5,6 @@ import EstiloGlobal, { Container } from './styles'
 import { ThemeProvider } from 'styled-components'
 import temaLight from './containers/Tema/light'
 
-import './global.css'
-
 function App() {
   return (
     <ThemeProvider theme={temaLight}>

@@ -20,9 +20,9 @@ export const VagaTitulo = styled.h3`
 `
 
 export const VagaLink = styled.a`
-  border-color: ${(props) => props.theme.corPrincipal};
-  background-color: ${(props) => props.theme.corSecundaria};
-  color: ${(props) => props.theme.corPrincipal};
+  border-color: ${(props) => props.theme.corSecundaria};
+  background-color: ${(props) => props.theme.corPrincipal};
+  color: ${(props) => props.theme.corSecundaria};
   display: inline-block;
   padding: 8px 16px;
   text-decoration: none;
@@ -31,14 +31,15 @@ export const VagaLink = styled.a`
   font-size: 14px;
   border-radius: 8px;
   text-align: center;
+  cursor: pointer;
 
   @media (max-width: 768px) {
     display: block;
   }
 
   &:hover {
-    border-color: var(--cor-principal);
-    background-color: var(--cor-secundaria);
-    color: var(--cor-principal);
+    border-color: ${(props) => props.theme.corSecundaria};
+    background-color: ${(props) => props.theme.corSecundaria};
+    color: ${(props) => props.theme.corPrincipal};
   }
 `
